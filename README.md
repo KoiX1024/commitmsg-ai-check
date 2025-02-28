@@ -13,6 +13,12 @@ git config --add ai.api.key {key}
 
 See [pre-commit] for instructions
 
+install hook-type must be commit-msg
+
+```yaml
+    pre-commit install --hook-type commit-msg
+```
+
 Sample `.pre-commit-config.yaml`:
 
 ```yaml
@@ -22,5 +28,9 @@ repos:
     hooks:
     -   id: commitmsg-ai-check
 ```
+[temporarily-disabling-hooks]
 
+
+
+[temporarily-disabling-hooks]: https://pre-commit.com/#temporarily-disabling-hooks
 [pre-commit]: https://pre-commit.com
