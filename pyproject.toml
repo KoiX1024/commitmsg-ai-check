@@ -1,0 +1,19 @@
+[project]
+name = "commitmsg-ai-check"
+version = "1.0.0"
+description = "pre-commit git hooks to use AI to check commit messages"
+readme = "README.md"
+authors = [
+    { name = "KoiX1024", email = "bgzxz1987@gmail.com" }
+]
+requires-python = ">=3.8"
+dependencies = [
+    "openai>=1.65.1",
+]
+
+[project.scripts]
+check_commitmsg = "commitmsg_ai_check.check_commitmsg:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

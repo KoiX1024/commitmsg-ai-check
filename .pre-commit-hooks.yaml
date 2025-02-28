@@ -1,0 +1,7 @@
+-   id: commitmsg-ai-check
+    name: commitmsg-ai-check
+    description: pre-commit git hooks to use AI to check commit messages.
+    entry: check_commitmsg
+    language: python
+    always_run: true 
+    stages: [commit-msg]
